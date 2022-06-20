@@ -1,0 +1,170 @@
+body {
+    height: 100%;
+    background-color: #15202b;
+    margin: 0;
+}
+
+p {
+    height: 10em;
+    color: black;
+    text-align: center;
+}
+
+header {
+    width: 99%;
+    background-color: #c01313;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.head_img {
+    width: 600px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.logo {
+    width: 100%;
+    background: url("");
+}
+
+.left_block {
+    width: 14%;
+    height: 90px;
+    margin-left: 20px;
+    background-color: #21384f; 
+    padding-bottom: 20%;
+    
+    transition: 0.3s;
+    border-radius: 10px;
+    border-color: #008a77; /* Цвет границы */
+    border-style: solid; /* Стиль границы */
+    display: inline-block;
+    position:relative;
+}
+
+.left_block:hover {
+    box-shadow: 10px 5px 1px 2px rgba(165, 158, 158, 0.2);
+    bottom:1px;
+    right:1px;
+    transition: 0.6s linear; 
+}
+
+.right_block:hover {
+    box-shadow: 1px 5px 10px 1px rgba(165, 158, 158, 0.2);
+    bottom:1px;
+    left:1px;
+    transition: 0.6s linear; 
+}
+
+.main {
+    height: 1080px;
+    width: 66%;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #D5B45B;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.right_block {
+    width: 20%;
+    margin-right: 20px;
+    padding-bottom: 30%;
+    background-color: #21384f; 
+    padding-bottom: 20%;
+    border-radius: 10px;
+    border-color: #008a77; /* Цвет границы */
+    border-style: solid; /* Стиль границы */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    display: inline-block;
+    position:relative;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    width: 100%;
+    float: left;
+    height: 50px;
+    background-color: black;
+    margin-top: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+.topmenu:after {
+    content: "";
+}
+
+.topmenu>li {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.topmenu>li>a {
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    padding: 10px 21px;
+}
+
+.topmenu li a:hover {
+    color: #D5B45B;
+}
+
+/*зміна коліру при наведенню на пункт меню */
+
+.submenu-link:after {
+    content: "ˇ";
+    font-family: "FontAwesome";
+    color: inherit;
+    margin-left: 5px;
+}
+
+.submenu {
+    position: absolute;
+    left: 25px;
+    top: 100%;
+    z-index: 5;
+    width: 180px;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: .5s ease-in-out;
+}
+
+.submenu a {
+    color: white;
+    text-align: left;
+    padding: 12px 15px;
+    font-size: 13px;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.submenu li:last-child a {
+    border-bottom: none;
+}
+
+.topmenu>li:hover .submenu {
+    opacity: 1;
+    transform: scaleY(1);
+}
