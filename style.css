@@ -27,7 +27,7 @@ p {
 }
 
 header {
-    width:100%;
+    width: 100%;
     min-width: 700px;
     background-color: #21384f;
     background-image: url(/pic/i.jpg);
@@ -70,9 +70,7 @@ header {
     float: right;
 }
 
-@media (max-width:1008px) {
-
-}
+@media (max-width:1008px) {}
 
 .contact_facebook>a {
     display: inline-block;
@@ -129,21 +127,19 @@ header {
     height: 480px;
     width: 228px;
     min-width: 228px;
+    max-width: 228px;
     margin-top: 20px;
-    margin-left:20px;
     background-color: #21384f;
     transition: 0.3s;
     border-radius: 10px;
     border-color: #008a77;
     border-style: solid;
-    position: fixed;
 }
 
 .right_block {
     width: 20%;
     min-width: 180px;
     height: 300px;
-    margin-left: 10px;
     margin-top: 20px;
     padding-bottom: 30%;
     background-color: #21384f;
@@ -151,9 +147,27 @@ header {
     border-radius: 10px;
     border-color: #008a77;
     border-style: solid;
-    display: inline-block;
-    position: fixed;
 }
+
+.main {
+    margin-top: 20px;
+    height: 1080px;
+    width: 100%;
+    min-width: 730px;
+    max-width: 850px;
+    background-color: #21384f;
+    border-radius: 10px;
+    border-color: #008a77;
+    border-style: solid;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 5%;
+}
+
 
 .left_block:hover {
     box-shadow: 10px 5px 1px 2px rgba(165, 158, 158, 0.2);
@@ -166,35 +180,23 @@ header {
 }
 
 @media (max-width:1400px) {
-    /*при зменшенні вікна до заданого розміру правий блок зникне*/
+
     .right_block {
         display: none;
     }
+
+    .container {
+        margin: 0 10%;
+    }
 }
 
-.main {
-    margin-top: 20px;
-    height: 1080px;
-    width: 100%;
-    min-width: 730px;
-    max-width: 850px;
-    margin-right: 20px;
-    margin-left: 270px;
-    background-color: #21384f;
-    border-radius: 10px;
-    display: inline-block;
-    border-color: #008a77;
-    /* Цвет границы */
-    border-style: solid;
-    /* Стиль границы */
+@media (max-width:1550px) {
+
+    .container {
+        margin: 0 1%;
+    }
 }
 
-
-
-.container {
-    width: 100%;
-    height: 100%;
-}
 
 .p_menu {
     height: 30px;
@@ -206,7 +208,6 @@ header {
 
 footer {
     width: 100%;
-    float: left;
     height: 50px;
     background-color: #21384f;
     border-style: solid;
@@ -214,7 +215,7 @@ footer {
     margin-top: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    position: absolute;
+    float: left;
 }
 
 ul {
