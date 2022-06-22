@@ -16,7 +16,7 @@ body {
     background: -moz-linear-gradient(top, red 0px, red 50%, black 50%, black 100%);
     background: -webkit-linear-gradient(top, red 0px, red 50%, black 50%, black 100%);
     background: -o-linear-gradient(top, red 0px, red 50%, black 50%, black 100%);
-    background: linear-gradient(top, red 0px, red 50%, black 50%, black 100%); 
+    background: linear-gradient(top, red 0px, red 50%, black 50%, black 100%);
 
     /*УКР*/
     /* background: -moz-linear-gradient(top, blue 0px, blue 50%, yellow 50%, yellow 100%);
@@ -44,7 +44,7 @@ header {
     width: 100%;
     min-width: 700px;
     background-color: #21384f;
-    background-image: url(/pic/i.jpg);
+    background-image: url(pic/i.jpg);
     background-repeat: no-repeat;
     background-size: 850px 300px;
     background-position: center;
@@ -203,23 +203,23 @@ header {
     color: #b8ede5;
     font-family: FreeMono, monospace;
     font-size: 18px;
-    display:block; 
-    text-align:center; 
+    display: block;
+    text-align: center;
     text-decoration: underline;
     margin-bottom: 10px;
 }
 
-.right_block > h2{
+.right_block>h2 {
     color: #b8ede5;
     font-family: FreeMono, monospace;
     font-size: 18px;
-    display:block; 
-    text-align:center; 
+    display: block;
+    text-align: center;
     text-decoration: none;
     margin-bottom: 10px;
 }
 
-.right_block>a:hover{
+.right_block>a:hover {
     transform: scale(1.04);
     transition: 0.1s linear;
 }
@@ -243,7 +243,7 @@ header {
 
 .main {
     margin-top: 20px;
-    height: 100%;
+    height: 1050px;
     width: 100%;
     min-width: 730px;
     max-width: 850px;
@@ -251,14 +251,30 @@ header {
     border-radius: 10px;
     border-style: solid;
     border-color: #008a77;
+    display: flex;
+    flex-direction: column;
 }
+
+.main_scroll {
+    height: 100%;
+    width: 100%;
+    background-color: #21384f;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.main_scroll::-webkit-scrollbar {
+    width: 0;
+}
+
 /* Ноутбук */
-.main > h1{
+.main_scroll>h1 {
     text-align: center;
     color: white;
 }
 
-.main > p{
+.main_scroll>p {
     margin-left: 40px;
     margin-right: 20px;
     color: white;
@@ -266,20 +282,20 @@ header {
     font-size: 18px;
 }
 
-.main > h3{
+.main_scroll>h3 {
     margin-left: 40px;
     margin-right: 20px;
     color: white;
     font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
-.lap1{
+.lap1 {
     margin-left: 40px;
     margin-right: 20px;
     width: 90%;
 }
 
-.lap2{
+.lap2 {
     margin-left: 40px;
     margin-right: 20px;
     width: 90%;
@@ -340,8 +356,7 @@ footer {
     margin-top: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    float: left;
-    text-align: center;
+    flex: 0 0 auto;
 }
 
 ul {
@@ -392,8 +407,6 @@ p {
     margin-left: 5px;
 
 }
-
-
 
 .submenu {
     position: absolute;
