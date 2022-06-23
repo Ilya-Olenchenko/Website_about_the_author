@@ -1,24 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style\style2.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="js\script2.js"></script>
-    <title>Bil_Bord</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style\style2.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="js\jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="js\script2.js"></script>
+  <title>Bil_Bord</title>
 </head>
 
 <body onload="funonload()">
-    <div id="bilbord">
-        <a class="close" ondblclick="on_close()">&#10006;</a>
-        <h1></h1>
-        <img src="rec.gif" class="rec_gif">
-        <p style="font-size: 20px; color:white;">Щоб почати потрапляти у супротивника... <a
-                href="https://www.redbull.com/ru-ru/valorant-aiming-tips-guide"
-                style="color:darkgray; font-size: 30px;">Читаті далі...</a></p>
+  <div id="bilbord">
+    <a class="close" ondblclick="on_close()">&#10006;</a>
+    <h1></h1>
+    <img src="rec.gif" class="rec_gif">
+    <p style="font-size: 20px; color:white;">Щоб почати потрапляти у супротивника... <a
+        href="https://www.redbull.com/ru-ru/valorant-aiming-tips-guide" style="color:darkgray; font-size: 30px;">Читаті
+        далі...</a></p>
 
+  </div>
+
+  <div class="login-page" id="reg_form">
+    <div class="form">
+      <form class="register-form">
+        <input type="text" placeholder="username" id="username_reg" />
+        <input type="password" placeholder="password" id="password_reg" />
+        <button type="button" onclick="registration_func()" href="#">Реєстрація</button>
+        <p class="message">Вже є аккаунт? <a class="but_a">Увійти</a></p>
+      </form>
+
+      <form class="login-form">
+        <input type="text" placeholder="username" id="username_log" />
+        <input type="password" placeholder="password" id="password_log" />
+        <button type="button" onclick="authorization()" href="#">Авторизація</button>
+        <p class="message">Ви зареєструвались? <a class="but_a">Створити новий аккаунт</a></p>
+      </form>
     </div>
-</body>
+  </div>
 
+
+  <button type="button" onclick="ex()" id="ex">Вихід</button>
+</body>
 </html>
