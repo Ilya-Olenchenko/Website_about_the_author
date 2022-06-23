@@ -21,6 +21,3 @@ jQuery(function ($) {
   //збільшення margin-bottom для submenu_link
 });
 
-function secrets_button() {
-  window.location.href = "bіlbord.html"
-}
